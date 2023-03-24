@@ -21,6 +21,7 @@ public class Bot {
 
         jda.addEventListener(new Ping());
         jda.addEventListener(new MemberJoin());
+        jda.addEventListener(new MemberLeave());
 
         for (Guild guild : jda.awaitReady().getGuilds())
         {
