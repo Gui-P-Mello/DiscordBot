@@ -13,7 +13,7 @@ public class Ping extends ListenerAdapter{
 
         MessageChannelUnion textChannel = event.getChannel();
 
-        if(args[0].equalsIgnoreCase("!"+"ping"))
+        if(args[0].equalsIgnoreCase(Bot.prefixMap.get(event.getGuild().getId())+"ping"))
         {
             textChannel.sendMessage(Bot.jda.getGatewayPing() + "ms").queue();
         }
