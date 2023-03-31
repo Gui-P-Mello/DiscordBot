@@ -10,7 +10,7 @@ public class Roles extends ListenerAdapter{
     public void onMessageReceived(@NotNull MessageReceivedEvent event) {
         
         String[] args = event.getMessage().getContentRaw().split(" ");
-        if(args[0].equalsIgnoreCase(Bot.prefixMap.get(event.getGuild().getId()) + "autorole"))
+        if(args[0].equalsIgnoreCase(Bot.prefixMap.get(event.getGuild().getId()) + "listroles"))
         {
             for (Role role : event.getGuild().getRoles()) {
 
