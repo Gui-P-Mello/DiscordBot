@@ -34,6 +34,7 @@ public class Bot {
         jda.addEventListener(new MemberJoin());
         jda.addEventListener(new MemberLeave());
         jda.addEventListener(new Prefix());
+        jda.addEventListener(new Roles());
 
         for (Guild guild : jda.awaitReady().getGuilds())
         {
